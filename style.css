@@ -1,0 +1,68 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.characterContainer{
+    display: none;
+}
+.episodeContainer{
+    display: none;
+}
+
+.container--active{
+    display: block;
+}
+
+.button--active{
+    background-color: green;
+}
+
+.display{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.charactersList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+.card{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    border-radius: 50px 50px;
+    text-align: center;
+}
+
+.card h3{
+    color: white;
+    font-size: 16px;
+}
+.cardImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50%; 
+}
+
+.unknown{
+    color: gray;
+}
+
+.alive{
+    color: green;
+}
+.dead{
+    color: red;
+}
